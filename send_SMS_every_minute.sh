@@ -1,8 +1,8 @@
 #!/bin/bash
 
-cd $(dirname $0) || exit 1
+D_R="$(cd "$(dirname "$0")" ; pwd -P)" || exit 1
 
-source echorun.sh || exit 2
+source "$D_R/echorun.sh" || exit 2
 
 while true
 do
